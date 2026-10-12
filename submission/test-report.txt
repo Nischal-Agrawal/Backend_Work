@@ -1,0 +1,57 @@
+﻿==================================================
+ Personal Finance Manager API Integration Test Suite
+ Base URL: http://localhost:8080/api
+==================================================
+ [PASS] Test 1: Public Health Check (GET /api/health) (Status: 200)
+ [PASS] Test 2: Unauthenticated access rejected (GET /api/transactions -> 401) (Status: 401)
+ [PASS] Test 3: User A Registration (POST /api/auth/register -> 201) (Status: 201)
+ [PASS] Test 4: Duplicate Username Rejected (POST /api/auth/register -> 409) (Status: 409)
+ [PASS] Test 5: Invalid Registration Format Rejected (POST /api/auth/register -> 400) (Status: 400)
+ [PASS] Test 6: Invalid Password Login Rejected (POST /api/auth/login -> 401) (Status: 401)
+ [PASS] Test 7: User A Login Success & Cookie Issued (POST /api/auth/login -> 200) (Status: 200)
+ [PASS] Test 8: List Categories (GET /api/categories -> 200) (Status: 200)
+ [PASS] Test 9: Create Custom Category (POST /api/categories -> 201) (Status: 201)
+ [PASS] Test 10: Duplicate Category Name Rejected (POST /api/categories -> 409) (Status: 409)
+ [PASS] Test 11: Duplicate Default Category Name Rejected (POST /api/categories -> 409) (Status: 409)
+ [PASS] Test 12: Create Income Transaction (POST /api/transactions -> 201) (Status: 201)
+ [PASS] Test 13: Create Expense Transaction (POST /api/transactions -> 201) (Status: 201)
+ [PASS] Test 14: Future Date Transaction Rejected (POST /api/transactions -> 400) (Status: 400)
+ [PASS] Test 15: Negative Amount Transaction Rejected (POST /api/transactions -> 400) (Status: 400)
+ [PASS] Test 16: Invalid Category Transaction Rejected (POST /api/transactions -> 400) (Status: 400)
+ [PASS] Test 17: Get All Transactions (GET /api/transactions -> 200) (Status: 200)
+ [PASS] Test 18: Filter Transactions by Category (GET /api/transactions?category=Salary -> 200) (Status: 200)
+ [PASS] Test 19: Filter Transactions by Type (GET /api/transactions?type=EXPENSE -> 200) (Status: 200)
+ [PASS] Test 20: Update Transaction (PUT /api/transactions/{id} -> 200) (Status: 200)
+ [PASS] Test 21: Reject Transaction Date Modification (PUT /api/transactions/{id} -> 400) (Status: 400)
+ [PASS] Test 22: Create Savings Goal (POST /api/goals -> 201) (Status: 201)
+ [PASS] Test 23: Past Target Date Goal Rejected (POST /api/goals -> 400) (Status: 400)
+ [PASS] Test 24: Get All Savings Goals (GET /api/goals -> 200) (Status: 200)
+ [PASS] Test 25: Get Single Savings Goal (GET /api/goals/{id} -> 200) (Status: 200)
+ [PASS] Test 26: Update Savings Goal (PUT /api/goals/{id} -> 200) (Status: 200)
+ [PASS] Test 27: Get Monthly Financial Report (GET /api/reports/monthly/{year}/{month} -> 200) (Status: 200)
+ [PASS] Test 28: Get Yearly Financial Report (GET /api/reports/yearly/{year} -> 200) (Status: 200)
+ [PASS] Test 29: Invalid Month in Report Rejected (GET /api/reports/monthly/{year}/13 -> 400) (Status: 400)
+ [PASS] Test 30: Prohibit Deleting Default Category (DELETE /api/categories/Salary -> 403) (Status: 403)
+ [PASS] Test 31: Prohibit Deleting Default Category Food (DELETE /api/categories/Food -> 403) (Status: 403)
+ [PASS] Test 32: Delete Unused Custom Category (DELETE /api/categories/FreelanceIncome -> 200) (Status: 200)
+ [PASS] Test 33: User B Login (POST /api/auth/login -> 200) (Status: 200)
+ [PASS] Test 34: User Isolation: User B sees 0 transactions of User A (Status: 200)
+ [PASS] Test 35: User Isolation: User B cannot get User A goal (GET /api/goals/{id} -> 404) (Status: 404)
+ [PASS] Test 36: User Isolation: User B cannot update User A goal (PUT /api/goals/{id} -> 404) (Status: 404)
+ [PASS] Test 37: User Isolation: User B cannot delete User A goal (DELETE /api/goals/{id} -> 404) (Status: 404)
+ [PASS] Test 38: User Isolation: User B cannot delete User A transaction (DELETE /api/transactions/{id} -> 404) (Status: 404)
+ [PASS] Test 39: Delete Goal for Owner (DELETE /api/goals/{id} -> 200) (Status: 200)
+ [PASS] Test 40: Delete Transaction 1 for Owner (DELETE /api/transactions/{id} -> 200) (Status: 200)
+ [PASS] Test 41: Delete Transaction 2 for Owner (DELETE /api/transactions/{id} -> 200) (Status: 200)
+ [PASS] Test 42: User A Logout (POST /api/auth/logout -> 200) (Status: 200)
+ [PASS] Test 43: Access with Invalidated Session Rejected (GET /api/transactions -> 401) (Status: 401)
+
+==================================================
+Base URL: http://localhost:8080/api
+Total Tests Executed: 43
+Tests Passed: 43
+Tests Failed: 0
+Success Rate: 100%
+>> ALL TESTS PASSED! <<
+The Personal Finance Manager API is working correctly.
+==================================================

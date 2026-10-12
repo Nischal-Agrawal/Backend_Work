@@ -1,0 +1,49 @@
+================================================================================
+SYFE BACKEND INTERN ASSIGNMENT - SUBMISSION DETAILS
+================================================================================
+
+1. Full Name:
+   Nischal Agrawal
+   (Source: Verified from Git configuration: Nischal-Agrawal)
+
+2. Email Address:
+   nishchal.agrawal.ug23@nsut.ac.in
+   (Source: Assignment specification email)
+
+3. Phone Number:
+   [Not provided in assignment materials - optional field on form]
+
+4. GitHub Repository Link (Public):
+   STATUS: Local repository initialized and fully committed on branch main.
+   To publish to your public GitHub account:
+     Option A (GitHub CLI):
+       gh auth login
+       gh repo create syfe-personal-finance-manager --public --source=. --push
+     Option B (Standard Git Remote):
+       git remote add origin https://github.com/<your-username>/syfe-personal-finance-manager.git
+       git push -u origin main
+   URL to submit once pushed: https://github.com/Nischal-Agrawal/syfe-personal-finance-manager
+
+5. Deployment Link:
+   STATUS: Ready for deployment via Render blueprint (render.yaml) or Dockerfile.
+   To deploy on Render:
+     1. Push the repository to GitHub.
+     2. In Render dashboard (https://dashboard.render.com), click "New +" -> "Blueprint".
+     3. Select the repository; Render will automatically detect render.yaml.
+     4. Click "Apply" to launch the service.
+     5. The live base URL will be: https://<your-service-name>.onrender.com/api
+
+6. Screenshot of Test Report Output:
+   submission/test-report.png
+   (Resolution: Monospace dark terminal rendering; 43/43 tests passed; 100% success rate; file size: ~219 KB)
+   Raw test output log: submission/test-report.txt
+
+7. Automated Test Suite & Coverage Metrics:
+   - JUnit 5 / Integration Tests Executed: 72 tests (0 failures, 0 errors)
+   - JaCoCo Line Coverage: 90.88% (787 / 866 lines covered, exceeding 80% requirement)
+   - Smoke / API Integration Suite: 43 test scenarios (100% passing)
+
+8. Additional Comments (Optional Form Field):
+   "Implemented the Personal Finance Manager API in Java 17 with Spring Boot 3.3.4, session-based authentication, user-scoped financial data isolation, BigDecimal arithmetic, multi-filter transaction queries, savings goals with real-time progress tracking, monthly/yearly analytics reports, centralized exception handling, 72 automated JUnit tests achieving 90.88% JaCoCo line coverage, containerization Dockerfile, Render deployment blueprint, and automated smoke test scripts."
+
+================================================================================

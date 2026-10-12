@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: syfe-personal-finance-manager
+    runtime: docker
+    plan: free
+    region: oregon
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:h2:mem:pfm_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+      - key: SPRING_DATASOURCE_DRIVER
+        value: org.h2.Driver
+      - key: SPRING_DATASOURCE_USERNAME
+        value: sa
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: ""
+      - key: SPRING_JPA_DATABASE_PLATFORM
+        value: org.hibernate.dialect.H2Dialect
