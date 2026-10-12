@@ -6,6 +6,12 @@
 [![Coverage](https://img.shields.io/badge/Coverage-90.88%25%20Line-blue.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+> [!NOTE]
+> ### 📢 Candidate Note: Language Background & AI Usage
+> - **Primary Programming Background**: My primary programming experience and day-to-day coding is in **C++** (data structures, algorithms, and core systems).
+> - **Framework & Language Transition**: Because the assignment strictly mandates **Java 17+ and Spring Boot**, I utilized AI-assisted pair programming to implement the idiomatic Spring patterns, annotations, and architecture.
+> - **Commitment**: Leveraging strong OOP, system design, and computer science foundations from C++, I am very eager, fast to adapt, and excited to rapidly transition and build production-grade backend services in Java/Spring Boot at Syfe.
+
 A production-ready, robust RESTful API backend for personal finance management, designed and implemented for the **Syfe Backend Intern Assignment**.
 
 The system enables users to manage financial transactions with strict data isolation, customize income/expense categories, track savings goals with real-time progress calculations, and generate monthly and yearly financial aggregation reports.

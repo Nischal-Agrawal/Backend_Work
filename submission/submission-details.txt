@@ -37,6 +37,6 @@ SYFE BACKEND INTERN ASSIGNMENT - SUBMISSION DETAILS
    - Smoke / API Integration Suite: 43 test scenarios (100% passing)
 
 8. Additional Comments (Optional Form Field):
-   "Implemented the Personal Finance Manager API in Java 17 with Spring Boot 3.3.4, session-based authentication, user-scoped financial data isolation, BigDecimal arithmetic, multi-filter transaction queries, savings goals with real-time progress tracking, monthly/yearly analytics reports, centralized exception handling, 72 automated JUnit tests achieving 90.88% JaCoCo line coverage, containerization Dockerfile, Render deployment blueprint, and automated smoke test scripts."
+   "Candidate note: My primary programming language and experience is in C++. To meet the assignment's strict requirement for Java 17+ and Spring Boot, I utilized AI assistance to navigate the framework conventions and setup. Leveraging strong OOP and computer science fundamentals from C++, I implemented session-based authentication, user data isolation, BigDecimal arithmetic, multi-filter queries, savings goals with live progress, monthly/yearly analytics, 72 automated JUnit tests (90.88% JaCoCo coverage), a Render deployment blueprint, and smoke test scripts. I am eager and excited to rapidly adapt to Java for production backend engineering."
 
 ================================================================================
