@@ -2,6 +2,7 @@
 
 [![Java 17](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
 [![Spring Boot 3.3.4](https://img.shields.io/badge/Spring%20Boot-3.3.4-brightgreen.svg)](https://spring.io/projects/spring-boot)
+[![Render Live](https://img.shields.io/badge/Render-Live%20UP-brightgreen.svg)](https://syfe-personal-finance-manager-0a9l.onrender.com/api/health)
 [![Tests Passed](https://img.shields.io/badge/Tests-72%2F72%20Passed-success.svg)]()
 [![Coverage](https://img.shields.io/badge/Coverage-90.88%25%20Line-blue.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -445,10 +446,10 @@ docker run -p 8080:8080 personal-finance-manager
 ```
 
 ### Render Deployment (`render.yaml`)
-A `render.yaml` blueprint is configured for zero-configuration deployment to [Render](https://render.com):
-1. Create a new Blueprint on Render dashboard pointing to this repository.
-2. Render detects `render.yaml` and deploys as a Docker web service.
-3. Live health check is configured at `/api/health`.
+The project includes a production blueprint (`render.yaml`) and multi-stage `Dockerfile` deployed on Render:
+- **Live Deployed API Base URL**: `https://syfe-personal-finance-manager-0a9l.onrender.com/api`
+- **Health Check Endpoint**: [https://syfe-personal-finance-manager-0a9l.onrender.com/api/health](https://syfe-personal-finance-manager-0a9l.onrender.com/api/health)
+- **Live Smoke Test Verification**: **43/43 tests passed (100% success rate)** verified directly against Render.
 
 ---
 
@@ -456,6 +457,7 @@ A `render.yaml` blueprint is configured for zero-configuration deployment to [Re
 
 - **Candidate**: Nischal Agrawal
 - **Email**: `nishchal.agrawal.ug23@nsut.ac.in`
-- **Repository**: Public GitHub Repository
+- **GitHub Repository**: [https://github.com/Nischal-Agrawal/Backend_Work](https://github.com/Nischal-Agrawal/Backend_Work)
+- **Live Deployment Link**: [https://syfe-personal-finance-manager-0a9l.onrender.com/api](https://syfe-personal-finance-manager-0a9l.onrender.com/api)
 - **Test Artifacts**: `submission/test-report.txt` and `submission/test-report.png`
 - **Submission Details Manifest**: `submission/submission-details.txt`

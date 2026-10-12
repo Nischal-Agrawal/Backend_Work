@@ -7,17 +7,17 @@ WORKDIR /workspace
 COPY .mvn/ .mvn/
 COPY mvnw pom.xml ./
 
-# Ensure execute permissions for maven wrapper
-RUN chmod +x ./mvnw
+# Ensure execute permissions and unix line endings for maven wrapper
+RUN tr -d '\r' < ./mvnw > ./mvnw_clean && mv ./mvnw_clean ./mvnw && chmod +x ./mvnw
 
 # Download dependencies offline
-RUN ./mvnw dependency:go-offline -B
+RUN sh ./mvnw dependency:go-offline -B
 
 # Copy application source code
 COPY src/ src/
 
 # Build production JAR without re-running tests
-RUN ./mvnw clean package -DskipTests -B
+RUN sh ./mvnw clean package -DskipTests -B
 
 # Stage 2: Runtime image
 FROM eclipse-temurin:17-jre-alpine
