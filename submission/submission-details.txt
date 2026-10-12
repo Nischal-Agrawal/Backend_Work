@@ -14,15 +14,8 @@ SYFE BACKEND INTERN ASSIGNMENT - SUBMISSION DETAILS
    [Not provided in assignment materials - optional field on form]
 
 4. GitHub Repository Link (Public):
-   STATUS: Local repository initialized and fully committed on branch main.
-   To publish to your public GitHub account:
-     Option A (GitHub CLI):
-       gh auth login
-       gh repo create syfe-personal-finance-manager --public --source=. --push
-     Option B (Standard Git Remote):
-       git remote add origin https://github.com/<your-username>/syfe-personal-finance-manager.git
-       git push -u origin main
-   URL to submit once pushed: https://github.com/Nischal-Agrawal/syfe-personal-finance-manager
+   https://github.com/Nischal-Agrawal/Backend_Work
+   (STATUS: Verified & Pushed to branch main)
 
 5. Deployment Link:
    STATUS: Ready for deployment via Render blueprint (render.yaml) or Dockerfile.

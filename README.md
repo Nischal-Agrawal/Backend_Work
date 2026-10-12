@@ -157,8 +157,8 @@ erDiagram
 ### 1. Clone & Build
 ```bash
 # Clone the repository
-git clone https://github.com/Nischal-Agrawal/syfe-personal-finance-manager.git
-cd syfe-personal-finance-manager
+git clone https://github.com/Nischal-Agrawal/Backend_Work.git
+cd Backend_Work
 
 # Build using Maven Wrapper
 ./mvnw clean package -DskipTests    # Linux / macOS / Git Bash
